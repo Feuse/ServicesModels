@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
@@ -9,7 +10,8 @@ namespace ServicesModels
 {
     public class Data
     {
-        public string UserId { get; set; }
+        public string Id { get; set; }
+        public string UserServiceId { get; set; }
         public string SessionId { get; set; }
         public string Input { get; set; }
         public string UserName { get; set; }
@@ -18,11 +20,13 @@ namespace ServicesModels
         public int Likes { get; set; }
         public string XPing { get; set; }
         public string HiddenUrl { get; set; }
+        public IFormFile File { get; set; }
         public string ImageId { get; set; }
         public Stream ImageStream { get; set; }
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy, hh.mm tt}")]
         [DataType(DataType.Date)]
         public DateTime Time { get; set; }
+        public Result Result { get; set; }
 
     }
 }

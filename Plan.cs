@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace ServicesModels
 {
-    public enum Service
+    public class Plan
     {
-        Badoo ,
-        Tinder,
-        OkCupid ,
-        Grinder
+        public int Likes { get; set; }
+        public double Price { get; set; }
     }
 }

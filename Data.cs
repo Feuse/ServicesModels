@@ -17,6 +17,7 @@ namespace ServicesModels
         public string UserName { get; set; }
         public string Password { get; set; }
         public Service Service { get; set; }
+        public string About { get; set; }
         public int Likes { get; set; }
         public string XPing { get; set; }
         public string HiddenUrl { get; set; }
@@ -27,6 +28,9 @@ namespace ServicesModels
         [DataType(DataType.Date)]
         public DateTime Time { get; set; }
         public Result Result { get; set; }
+        public string ResultString { get; set; }
+     
+
 
     }
 }

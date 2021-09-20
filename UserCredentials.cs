@@ -17,5 +17,6 @@ namespace ServicesModels
         public string Password { get; set; }
         public string Hash { get; set; }
         public IList<UserServiceCredentials> Services { get; set; }
+        public bool SeenTutorial { get; set; }
     }
 }

@@ -17,6 +17,7 @@ namespace ServicesModels
         public string UserName { get; set; }
         public string Password { get; set; }
         public Service Service { get; set; }
+        public IList<UserServiceCredentials> Services { get; set; }
         public string About { get; set; }
         public int Likes { get; set; }
         public string XPing { get; set; }
@@ -29,8 +30,8 @@ namespace ServicesModels
         public DateTime Time { get; set; }
         public Result Result { get; set; }
         public string ResultString { get; set; }
-     
-
-
+        public int Repeat { get; set; }
+        public bool SeenTutorial { get; set; }
+      
     }
 }

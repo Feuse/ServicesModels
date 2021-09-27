@@ -14,7 +14,7 @@ namespace ServicesModels
         public string UserServiceId { get; set; }
         public string SessionId { get; set; }
         public string Input { get; set; }
-        public string UserName { get; set; }
+        public string Username { get; set; }
         public string Password { get; set; }
         public Service Service { get; set; }
         public IList<UserServiceCredentials> Services { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServicesModels
 {
-    public class UserServiceCredentials
+    public class UserServiceCredentials 
     {
         [BsonId]
         public string UserServiceId { get; set; }
